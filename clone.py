@@ -80,6 +80,6 @@ model.add(Dense(1))
 model.compile(loss='mse', optimizer='adam')
 
 model.fit_generator(train_generator, steps_per_epoch=len(train_samples)/BATCH_SIZE, validation_data=validation_generator,
-                    validation_steps=len(validation_samples)/BATCH_SIZE, epochs=3)
+                    validation_steps=len(validation_samples)/BATCH_SIZE, epochs=2)
 model.save('model.h5')
 print("Model saved")
