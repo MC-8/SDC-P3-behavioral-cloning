@@ -35,7 +35,7 @@ def generator(samples, batch_size=32):
                 steering = float(batch_sample[3])
 
                 # create adjusted steering measurements for the side camera images
-                correction = 0.33
+                correction = 0.20
                 steering_left = steering + correction
                 steering_right = steering - correction
 
