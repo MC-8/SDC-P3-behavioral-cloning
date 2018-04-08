@@ -39,12 +39,11 @@ class SimplePIController:
 
         # integral error
         self.integral += self.error
-
         return self.Kp * self.error + self.Ki * self.integral
 
 
-controller = SimplePIController(0.1, 0.002)
-set_speed = 9
+controller = SimplePIController(0.25, 0.008)
+set_speed = 30
 controller.set_desired(set_speed)
 
 
